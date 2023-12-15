@@ -33,19 +33,6 @@ public class BoardDAO {
 		int result = sqlSession.update("Board.updateBoard",vo);
 		return result;
 	}
-//class BoardRowMapper implements RowMapper<BoardVO> {
-//		@Override
-//		public BoardVO mapRow(ResultSet rs, int rowNum)throws SQLException{
-//			BoardVO vo = new BoardVO();
-//			vo.setSeq(rs.getInt("seq"));
-//			vo.setTitle(rs.getString("title"));
-//			vo.setContent(rs.getString("content"));
-//			vo.setWriter(rs.getString("writer"));
-//			vo.setCategory(rs.getString("category"));
-//			vo.setRegdate(rs.getDate("regdate"));
-//			return vo;
-//		}
-//	}
 	public BoardVO getBoard(int seq){
 		BoardVO one = sqlSession.selectOne("Board.getBoard",seq);
 		return one;

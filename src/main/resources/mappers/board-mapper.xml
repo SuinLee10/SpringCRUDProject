@@ -4,24 +4,23 @@
 
 <mapper namespace="Board">
     <insert id="insertBoard">
-        insert into OURBOARD (category, title, writer, content) values (
-        #{category}, #{title}, #{writer}, #{content}
+        insert into BBOARD (category, name, address, hours, phone, dayoff, content) values (
+        #{category}, #{name}, #{address},#{hours}, #{phone}, #{dayoff}, #{content}
         )
     </insert>
     <update id="updateBoard">
-        update OURBOARD
-        set title=#{title}, content=#{content},writer=#{writer},category=#{category}
+        update BBOARD
+        set name=#{name}, content=#{content}, dayoff=#{dayoff}, address=#{address}, hours=#{hours}, phone=#{phone}, category=#{category}
         where seq=#{seq}
-        )
     </update>
     <delete id="deleteBoard">
-        delete from OURBOARD where seq=#{seq}
+        delete from BBOARD where seq=#{seq}
     </delete>
     <select id="getBoard" resultType="board">
-       select * from OURBOARD where seq = #{seq}
+       select * from BBOARD where seq = #{seq}
     </select>
 
     <select id="getBoardList" resultType="board">
-        select * from OURBOARD order by seq desc
+        select * from BBOARD order by seq desc
     </select>
 </mapper>

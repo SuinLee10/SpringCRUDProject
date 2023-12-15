@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<div style='width:100%;text-align:center;padding-top:100px'> <img src='../img/home.jpg' height="450">
+<div style='width:100%;text-align:center;padding-top:100px'> <img src='../img/dog.JPEG' height="450">
     <form method="post" action="loginOk">
         <div><label>User ID: </label><input type='text' name='userid' /></div> <div><label>Password: </label>
         <input type='password' name='password' /></div> <button type='submit'>login</button>

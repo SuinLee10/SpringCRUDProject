@@ -5,10 +5,14 @@ import java.util.Date;
 public class BoardVO {
 	private int seq;
 	private String category;
-	private String title;
-	private String writer;
-	private String content;
+	private String name;
+	private String address;
+	private String hours;
+	private String phone;
+	private String dayoff;
+
 	private Date regdate;
+	private String content;
 	private int cnt;
 	
 	public int getSeq() {
@@ -19,29 +23,39 @@ public class BoardVO {
 	}
 	public String getCategory(){return category;}
 	public void setCategory(String category){this.category= category;}
-	public String getTitle() {
-		return title;
+	public String getName() {
+		return name;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getWriter() {
-		return writer;
+	public String getAddress(){return address;}
+	public void setAddress(String address){this.address= address;}
+	public String getHours(){return hours;}
+	public void setHours(String hours){this.hours= hours;}
+	public String getPhone() {
+		return phone;
 	}
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-	public String getContent() {
-		return content;
+	public String getDayoff() {
+		return dayoff;
 	}
-	public void setContent(String content) {
-		this.content = content;
+	public void setDayoff(String dayoff) {
+		this.dayoff = dayoff;
 	}
 	public Date getRegdate() {
 		return regdate;
 	}
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}
 	public int getCnt() {
 		return cnt;

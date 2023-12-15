@@ -48,6 +48,11 @@ public class BoardController {
                 System.out.println("데이터 수정 성공!!!");
             return "redirect:list";
         }
+    @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
+    public String view(@PathVariable("id")int id, Model model) {
+        model.addAttribute("view", boardService.getBoard(id));
+        return "view";
+    }
     @RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
     public String deletePostOk(@PathVariable("id")int id){
         if(boardService.deleteBoard(id)==0)
