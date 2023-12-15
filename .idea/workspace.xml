@@ -9,42 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1f4f908-3cf9-40c2-848a-2565d8f78780" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/com/example/HomeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/com/example/board/BoardController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/com/example/board/BoardDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/com/example/board/BoardService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/com/example/board/BoardServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/com/example/board/BoardVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/mappers/board-mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/mappers/member-mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/mariadb-java-client-3.0.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/mybatis-3.5.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/mybatis-spring-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-aop-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-beans-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-context-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-core-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-expression-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-jcl-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-jdbc-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-tx-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-web-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/lib/spring-webmvc-5.3.23.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/views/addpostform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/views/editform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/views/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d1f4f908-3cf9-40c2-848a-2565d8f78780" name="Changes" comment="first" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/leesu-in/IdeaProjects/실프1/SpringMyBatisCRUDProject/src/main/webapp/WEB-INF/views",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/leesu-in/IdeaProjects/실프1/SpringMyBatisCRUDProject/src/main/webapp/WEB-INF/views&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
@@ -307,6 +272,7 @@
       <workItem from="1701760738096" duration="6218000" />
       <workItem from="1702005917174" duration="2042000" />
       <workItem from="1702008161056" duration="18888000" />
+      <workItem from="1702625459485" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -316,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702624620826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first">
+      <option name="closed" value="true" />
+      <created>1702625730716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702625730716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
