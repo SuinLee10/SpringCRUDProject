@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="path" value="${pageContext.request.contextPath}"/>
+<!DOCTYPE html>
 <html>
 <head>
     <script>
@@ -15,25 +17,31 @@
             if(a) location.href='deleteok/' + id;
         }
     </script>
+    <link href="${path}/resources/css/style.css" rel="stylesheet"/>
     <title>Title</title>
-    <link rel="stylesheet" href="${path}/resources/css/style.css">
 </head>
 <body>
-<h1>자유게시판</h1>
-<table id="list" width="90%">
+    <h1><span class="blue">&lt;</span>Hot Place<span class="blue">&gt;</span>
+        <span class="yellow">with HGU shop</span></h1>
+<h2>Only for Handong University students</h2>
+<table class="container" id="list">
+    <thead>
+    <button type="button" class="custom-btn btn-6" onclick="location.href='list'">목록보기</button>
+    <button class="custom-btn btn-6" type="button" onclick="location.href='add'">Add New Post</button>
     <tr>
-        <th>Id</th>
-        <th>Category</th>
-        <th>Name</th>
-        <th>address</th>
-        <th>hours</th>
-        <th>dayoff</th>
-        <th>phone</th>
-        <th>Edit</th>
-        <th>Delete</th>
-        <th>View</th>
+        <th><h1>Id</h1></th>
+        <th><h1>Category</h1></th>
+        <th><h1>Name</h1></th>
+        <th><h1>address</h1></th>
+        <th><h1>hours</h1></th>
+        <th><h1>dayoff</h1></th>
+        <th><h1>phone</h1></th>
+        <th><h1>Edit</h1></th>
+        <th><h1>Delete</h1></th>
+        <th><h1>View</h1></th>
     </tr>
-
+    </thead>
+    <tbody>
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.seq}</td>
@@ -48,9 +56,10 @@
             <td><a href="view/${u.seq}">View</a></td>
         </tr>
     </c:forEach>
+    </tbody>
 </table>
+
 <br/>
-<button type="button" onclick="location.href='list'">목록보기</button>
-<br/><button type="button" onclick="location.href='add'">Add New Post</button>
+
 </body>
 </html>
