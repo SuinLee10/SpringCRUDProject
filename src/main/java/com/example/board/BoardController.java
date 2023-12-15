@@ -1,4 +1,4 @@
-package com.example;
+package com.example.board;
 
 import com.example.board.BoardServiceImpl;
 import com.example.board.BoardVO;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping(value="/board")
 public class BoardController {
+
     @Autowired
     BoardServiceImpl boardService;
     @RequestMapping(value = "/list", method = RequestMethod.GET)
@@ -35,23 +36,24 @@ public class BoardController {
     @RequestMapping(value="/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model){
         BoardVO boardVO = boardService.getBoard(id);
-        model.addAttribute("u", boardVO);
+        model.addAttribute("boardVO", boardVO);
         return "editform";
     }
     @RequestMapping(value = "/editok", method = RequestMethod.POST)
-    public String editPostOk(BoardVO vo){
-        if(boardService.updateBoard(vo)==0)
-            System.out.println("데이터 수정 실패");
-        else
-            System.out.println("데이터 수정 성공!!!");
-        return "redirect:list";
-    }
-    @RequestMapping(value = "/deleteok", method = RequestMethod.GET)
+    public String editPostOk(BoardVO vo) {
+        int i = boardService.updateBoard(vo);
+            if (i==0)
+                System.out.println("데이터 수정 실패");
+            else
+                System.out.println("데이터 수정 성공!!!");
+            return "redirect:list";
+        }
+    @RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
     public String deletePostOk(@PathVariable("id")int id){
         if(boardService.deleteBoard(id)==0)
             System.out.println("데이터 삭제 실패");
         else
             System.out.println("데이터 삭제 성공!!!");
-        return "redirect:list";
+        return "redirect:../list";
     }
 }

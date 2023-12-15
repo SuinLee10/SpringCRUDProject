@@ -9,7 +9,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
+    <script>
+        function delete_ok(id){
+            var a = confirm("정말로 삭제하시겠습니까?");
+            if(a) location.href='deleteok/' + id;
+        }
+    </script>
     <title>Title</title>
+    <link rel="stylesheet" href="${path}/resources/css/style.css">
 </head>
 <body>
 <h1>자유게시판</h1>
@@ -34,10 +41,10 @@
             <td>${u.content}</td>
             <td>${u.regdate}</td>
             <td><a href="editform/${u.seq}">Edit</a></td>
-            <td><a href="javascript:delete_ok('${u.seq}')"></a></td>
+            <td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
         </tr>
     </c:forEach>
 </table>
-<br/><a href="add">Add New Post</a>
+<br/><button type="button" onclick="location.href='add'">Add New Post</button>
 </body>
 </html>
